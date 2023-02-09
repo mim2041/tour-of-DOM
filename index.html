@@ -22,7 +22,7 @@
     <header>
         <h1>Welcome to my DOM</h1>
     </header>
-    <main>
+    <main id="main-container">
         <section>
             <h1>My Awesome DOM de baba</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea similique suscipit voluptatem perferendis distinctio odit minima eligendi deserunt assumenda rerum modi cum natus deleniti repudiandae dolorem aut, ex odio vel commodi quasi accusantium libero! Ratione, perferendis delectus. Itaque laborum tenetur, voluptatibus, repellendus amet cumque reprehenderit dolorem commodi, expedita accusantium ea?</p>
@@ -34,8 +34,8 @@
         </ul>
         </section>
 
-        <section class="fruits-container">
-            <h1 id="fruits-title">Fruits I like</h1>
+        <section class="fruits-container large-text">
+            <h1 id="fruits-title" class="some-class random-class blue-bg">Fruits I like</h1>
             <ul>
                 <li>banana</li>
                 <li>apple</li>
@@ -43,9 +43,9 @@
             </ul>
         </section>
 
-        <section>
+        <section id="places-container">
             <h1 id="places-title">Places I like to visit</h1>
-            <ul>
+            <ul id="places-list">
                 <li class="important-places">Sundarban</li>
                 <li class="important-places">Bandorbon</li>
                 <li class="important-places">Shalbon</li>
@@ -53,7 +53,9 @@
             </ul>
         </section>
     </main>
+    <script src="js/append.js"></script>
     <script src="js/dom.js"></script>
+    <script src="js/styleinJS.js"></script>
     <script>
         //  Option 1: getElementsByTagName
         const liCollection = document.getElementsByTagName('li');
@@ -75,7 +77,7 @@
         const places = document.getElementsByClassName('important-places');
         // console.log(places);
         for(const place of places){
-            console.log(place.innerText);
+            // console.log(place.innerText);
         }
 
         // option-4: querySelector
@@ -83,7 +85,7 @@
         const someLi = document.querySelectorAll('.fruits-container li');
         // console.log(someLi);
         for(const li of someLi){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
     </script>
 </body>
