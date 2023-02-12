@@ -32,3 +32,5 @@ section.innerHTML = `
 `;
 
 main.appendChild(section);
+
+console.log('Hello this is from second js');
